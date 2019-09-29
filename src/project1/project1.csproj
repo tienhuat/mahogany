@@ -1,0 +1,38 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+    <ApplicationIcon />
+    <OutputType>Library</OutputType>
+    <StartupObject />
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <OutputPath></OutputPath>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Remove="BoundedContexts\BoundedContext1\Features\SuperGrouping1\Hello\Index.cshtml" />
+    <Content Remove="BoundedContexts\BoundedContext1\Features\Home\Index.cshtml" />
+    <Content Remove="BoundedContexts\BoundedContext1\Features\_ViewImports.cshtml" />
+    <Content Remove="BoundedContexts\BoundedContext1\Features\_ViewStart.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="BoundedContexts\BoundedContext1\Features\SuperGrouping1\Hello\Index.cshtml" />
+    <EmbeddedResource Include="BoundedContexts\BoundedContext1\Features\Home\Index.cshtml" />
+    <EmbeddedResource Include="BoundedContexts\BoundedContext1\Features\_ViewImports.cshtml" />
+    <EmbeddedResource Include="BoundedContexts\BoundedContext1\Features\_ViewStart.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.1.2" PrivateAssets="All" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.1.9" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Mahogany\Mahogany.csproj" />
+  </ItemGroup>
+
+</Project>
