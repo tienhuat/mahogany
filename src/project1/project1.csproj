@@ -12,14 +12,14 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Content Remove="BoundedContexts\BoundedContext1\Features\SuperGrouping1\Hello\Index.cshtml" />
+    <Content Remove="BoundedContexts\BoundedContext1\Features\FeatureGrouping1\Hello\Index.cshtml" />
     <Content Remove="BoundedContexts\BoundedContext1\Features\Home\Index.cshtml" />
     <Content Remove="BoundedContexts\BoundedContext1\Features\_ViewImports.cshtml" />
     <Content Remove="BoundedContexts\BoundedContext1\Features\_ViewStart.cshtml" />
   </ItemGroup>
 
   <ItemGroup>
-    <EmbeddedResource Include="BoundedContexts\BoundedContext1\Features\SuperGrouping1\Hello\Index.cshtml" />
+    <EmbeddedResource Include="BoundedContexts\BoundedContext1\Features\FeatureGrouping1\Hello\Index.cshtml" />
     <EmbeddedResource Include="BoundedContexts\BoundedContext1\Features\Home\Index.cshtml" />
     <EmbeddedResource Include="BoundedContexts\BoundedContext1\Features\_ViewImports.cshtml" />
     <EmbeddedResource Include="BoundedContexts\BoundedContext1\Features\_ViewStart.cshtml" />
